@@ -77,6 +77,10 @@ export function ContactList() {
   const closeAddPopup = () => {
     setShowAddPopup(false);
   };
+  const triggerViewPopup = (contact) => {
+    setCurrentContact(contact);
+    setShowViewPopup(true);
+  };
   const triggerAddPopup = () => {
     setShowAddPopup(true);
   };
@@ -155,8 +159,7 @@ export function ContactList() {
                     className="contact_icon"
                     src={eyeImg}
                     onClick={() => {
-                      setCurrentContact(contact);
-                      setShowViewPopup(true);
+                      triggerViewPopup(contact);
                     }}
                   ></img>
                   <img

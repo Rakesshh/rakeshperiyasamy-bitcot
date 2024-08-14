@@ -26,6 +26,9 @@ export const ContactView = ({ contact, onClose }) => {
           <div className="contact-detail">
             <strong>Email:</strong> <span>{contact.email}</span>
           </div>
+          <div className="contact-detail">
+            <strong>Address:</strong> <span>{contact.address}</span>
+          </div>
         </div>
       </div>
     </div>

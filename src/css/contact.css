@@ -1,0 +1,85 @@
+.contact_container {
+  background-color: black;
+  height: 900px;
+  width: 500px;
+}
+.contact_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  align-items: center;
+}
+
+.contact_header_text {
+  padding-right: 5px;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  background-color: #3498db; /* Circle color */
+  border-radius: 50%;
+  border: 3px solid white; /* Border color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.plus {
+  font-size: 25px;
+  color: white; /* Plus sign color */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+.contact_search {
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.contact_item {
+  display: flex;
+  justify-content: space-between; /* Space between contact details and icons */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Optional: Adds padding around the item */
+  border-bottom: 1px solid #ddd; /* Optional: Adds a border for separation */
+  background-color: white;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center; /* Align profile icon, name, and mobile number vertically */
+  gap: 10px; /* Space between profile icon and text */
+  flex: 1; /* Take up remaining space */
+}
+
+.profileIcon {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  border-radius: 50%; /* Optional: Makes the icon circular */
+}
+
+.contact-card span {
+  display: block; /* Ensure spans stack vertically */
+  text-align: left; /* Align text to the left */
+}
+
+.icons-container {
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.contact_id {
+  flex: 0 0 auto; /* Prevents the ID from stretching */
+  margin-right: 20px; /* Space between ID and contact details */
+}
+
+.contact_icon {
+  cursor: pointer; /* Optional: Changes cursor to pointer for clickable icons */
+  width: 24px; /* Optional: Set a specific width for icons */
+  height: 24px; /* Optional: Set a specific height for icons */
+}

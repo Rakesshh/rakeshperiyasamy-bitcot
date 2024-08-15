@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/edit_contact.css"; // Import CSS file for styling
 
 export const EditContact = ({ contact, onClose, onUpdateContact }) => {
+  // contact object data stored in state
   const [formData, setFormData] = useState({
     name: contact.name,
     email: contact.email,
@@ -9,6 +10,7 @@ export const EditContact = ({ contact, onClose, onUpdateContact }) => {
     address: contact.address,
   });
 
+  // updating the state on value change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -17,6 +19,7 @@ export const EditContact = ({ contact, onClose, onUpdateContact }) => {
     });
   };
 
+  // on clicking submit , update contact function received from parent component is called
   const handleSubmit = (e) => {
     e.preventDefault();
     onUpdateContact({ ...contact, ...formData });
@@ -72,7 +75,6 @@ export const EditContact = ({ contact, onClose, onUpdateContact }) => {
             name="address"
             value={formData.address}
             onChange={handleChange}
-            required
           />
         </div>
         <button type="submit" className="submit-button">

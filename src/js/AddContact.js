@@ -9,6 +9,7 @@ export const AddContact = ({ onClose, onAddContact }) => {
     address: "",
   });
 
+  // setting the changed values in state
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -17,6 +18,7 @@ export const AddContact = ({ onClose, onAddContact }) => {
     });
   };
 
+  // onClicking submit , onAddContact is called which is passed from Parent component
   const handleSubmit = (e) => {
     e.preventDefault();
     onAddContact(formData);

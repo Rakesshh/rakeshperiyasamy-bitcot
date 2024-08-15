@@ -4,6 +4,7 @@ import "../css/contact_view.css"; // Import CSS file for styling
 export const ContactView = ({ contact, onClose }) => {
   if (!contact) return null;
 
+  //clicked contact object received in props
   return (
     <div className="popup-overlay">
       <div className="popup-container">
@@ -34,18 +35,3 @@ export const ContactView = ({ contact, onClose }) => {
     </div>
   );
 };
-
-// const createMask = (contact) => {
-//   // Create the mask element
-//   const mask = document.createElement("div");
-//   mask.className = "mask";
-//   mask.style.position = "fixed";
-//   mask.style.top = "0";
-//   mask.style.left = "0";
-//   mask.style.width = "100vw";
-//   mask.style.height = "100vh";
-//   mask.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // semi-transparent black
-//   mask.style.zIndex = "1000";
-//   mask.style.cursor = "pointer";
-//   document.body.appendChild(mask);
-// };
